@@ -3,7 +3,7 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy_utils import database_exists
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = r"sqlite:///F:\Python learning\Day_63_database\books-collection.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = r"sqlite:///file_location\books-collection.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
